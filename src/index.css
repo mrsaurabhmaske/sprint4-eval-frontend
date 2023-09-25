@@ -85,3 +85,21 @@ input{
 select{
   padding: 20px;
 }
+
+.AllPosts{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.PostCard{
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}

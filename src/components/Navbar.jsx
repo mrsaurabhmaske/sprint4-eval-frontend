@@ -6,6 +6,7 @@ function Navbar() {
             <div className='logosection' style={{color:"black",fontSize:"40px"}}>Socio-Masai</div>
             <div className='linkssection' style= {{display:"flex",gap:"10px"}}>
                 <Link to='/'>Home</Link>
+                <Link to='/posts'>All Posts</Link>
                 <Link to='/login'>login</Link>
                 <Link to="signup">signup</Link>
                 <Link to="posts/addnew">Create Post</Link>

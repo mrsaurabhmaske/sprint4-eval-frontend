@@ -10,11 +10,16 @@ function CreatePost() {
 
     const handleCreatePost = async () => {
         try {
-            let res = await axios.post(`${baseURL}/posts/add`, {
+            const newPost = {
+                title,
+                body,
+                device
+            }
+
+            let res = await axios.post(`${baseURL}/posts/add`, newPost, {
                 headers: {
-                    "Content-Type": "application/json"
-                },
-                body:JSON.stringify({ title, body, device })
+                    "Authorization": `${localStorage.getItem('token')}`
+                }
             });
             console.log(res.data)
         } catch (error) {
